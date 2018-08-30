@@ -10,7 +10,7 @@ public class DownloadData
 		
 		URL u= new URL(url);
 		
-		HttpURLConnection con=  (HttpURLConnection) u.openConnection; // Opens the connection
+		HttpURLConnection con=  (HttpURLConnection) u.openConnection() // Opens the connection
 		
 		InputStream is= con.getInputStream(); // It fetches the Input Stream for the connection for download
 		
